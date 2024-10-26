@@ -45,6 +45,7 @@ export class CustomController {
     const result = await this.plutusTxService.getPlutusDashboard();
     return res.json(result);
   }
+
   //job dashboard chart
   @Get('jobdashboard')
   async _getDashboardJob(@Response() res: any) {
